@@ -28,6 +28,12 @@ The way you're likely going to want to do it is by running the command
 uvicorn main:app --reload
 ```
 
+or
+
+```bash
+python main.py
+```
+
 If you would like to choose a specific port (if 8000 is already occupied by another program), then you can run
 
 ```bash

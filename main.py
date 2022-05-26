@@ -5,6 +5,11 @@ import models
 from database import Base, engine, sessionLocal
 from sqlalchemy.orm import Session
 
+import uvicorn
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+
 # This will create our database if it doesn't exist
 Base.metadata.create_all(bind=engine)
 
